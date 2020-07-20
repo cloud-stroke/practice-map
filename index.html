@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">Practice map</div>
+  <div id="map-title">EDIT map title</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -33,14 +33,13 @@
   });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
- L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>,
-   &copy; <a href="https://carto.com/attribution">CARTO</a>'
- }).addTo(map);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
+  }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([55.79, 37.80]).addTo(map) // EDIT latitude, longitude to re-position marker
-  .bindPopup("Fave place to eat!"); // EDIT pop-up text message
+  L.marker([41.77, -72.69]).addTo(map) // EDIT latitude, longitude to re-position marker
+  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
 
   </script>
 </body>
